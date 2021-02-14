@@ -1,0 +1,9 @@
+Building Uwucoin
+
+See doc/readme-qt.rst for instructions on building Uwucoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Uwucoin.
+
+See doc/build-*.txt for instructions on building uwucoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Uwucoin.
