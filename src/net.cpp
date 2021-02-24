@@ -1225,7 +1225,7 @@ void ThreadDNSAddressSeed()
 // Litecoin IP addresses -> changing it so we don't connect to LC's IP
 unsigned int pnSeed[] =
 {
-  0x6100000a
+  0x6100000a, 0xf635f868
 };
 
 void DumpAddresses()

@@ -1085,12 +1085,26 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
+//int whichUWU[] = {850,1190,850}; //uwu in ascii
+
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 69 * COIN; //UWUCoin rewards
+    //int i = (rand() % 100);
+   // int uwuIndex = -1;
+    //int newCoinVal = -1;
+    //if(i < 75){ //UWU
+	//uwuIndex = i % 3;
+	//newCoinVal = whichUWU[uwuIndex];
+   // }else if(i < 98 && i >= 75){
+	//newCoinVal = 850 + 1190 + 850; //UWU
+  //  }else{
+//	newCoinVal = (850 + 1190 + 850) * 3;
+    //}
+
+    int64 nSubsidy = 2890 * COIN; //UWUCoin rewards
 
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 10000); // Uwucoin: 840k blocks in ~4 years ->>>>changed to 10K
+    nSubsidy >>= (nHeight / 100000); // Uwucoin: 840k blocks in ~4 years ->>>>changed to 10K
 
     return nSubsidy + nFees;
 }
@@ -2784,7 +2798,7 @@ bool InitBlockIndex() {
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 20 * COIN; //Update the coin value to UWU's value
+        txNew.vout[0].nValue = 2890 * COIN; //Update the coin value to UWU's value
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04eb4563f500f0b4f80b8f987d4d9a49884f59042e59e265ff1632a59db12cf264ff7b1306c750f52509532aa8bfe55b1347e4259fff7d1cb0c9a317549313943c") << OP_CHECKSIG;
 //new genesis public: 04eb4563f500f0b4f80b8f987d4d9a49884f59042e59e265ff1632a59db12cf264ff7b1306c750f52509532aa8bfe55b1347e4259fff7d1cb0c9a317549313943c
 //old genesis public 040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9
