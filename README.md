@@ -1,9 +1,12 @@
 Uwucoin integration/staging tree
 ================================
 
+Just creating a memecoin for fun. Learned alot about the inner-workings on Crypto's origins creating this. Definetly a super fun project. The full nodes/DNS Seeders are currently off, but they are running on DigitalOcean's IaaS droplets (Ubuntu 16.04). 
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Uwucoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2021-2021 UWUcoin Developers
+
 
 What is Uwucoin?
 ----------------
